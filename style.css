@@ -552,3 +552,101 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Container fix */
+  .container,
+  section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero / Home Section */
+  .home,
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home img,
+  .hero img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .home h1,
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .home p,
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Skills Section */
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* Projects */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  /* Buttons */
+  button,
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Contact */
+  .contact form {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 14px;
+  }
+}
